@@ -9,7 +9,8 @@
   "event",
   "booking",
   "column_break_hcgq",
-  "ticket_type"
+  "ticket_type",
+  "amended_from"
  ],
  "fields": [
   {
@@ -46,12 +47,23 @@
    "label": "Ticket Type",
    "options": "Event Ticket Type",
    "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Event Ticket",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2025-08-17 14:43:39.953576",
+ "modified": "2025-08-17 16:29:51.027526",
  "modified_by": "Administrator",
  "module": "Tickting",
  "name": "Event Ticket",
