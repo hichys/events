@@ -1,0 +1,171 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2025-08-16 02:42:52.174827",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "category",
+  "banner_image",
+  "column_break_lbxq",
+  "is_published",
+  "medium",
+  "venue",
+  "host",
+  "section_break_yrbl",
+  "start_date",
+  "start_time",
+  "time_zone",
+  "column_break_pyop",
+  "end_date",
+  "end_time",
+  "section_break_kyvr",
+  "short_description",
+  "about",
+  "schedule_tab",
+  "schedule"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_lbxq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Link",
+   "label": "Category",
+   "options": "Event Category",
+   "reqd": 1
+  },
+  {
+   "fieldname": "medium",
+   "fieldtype": "Select",
+   "label": "Medium",
+   "options": "In Person\nOnline\nHybrid"
+  },
+  {
+   "fieldname": "venue",
+   "fieldtype": "Link",
+   "label": "venue",
+   "mandatory_depends_on": "eval:doc.category!==\"Online\"",
+   "options": "Event Venue",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_kyvr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "short_description",
+   "fieldtype": "Small Text",
+   "label": "Short Description"
+  },
+  {
+   "description": "Desciptions About the event",
+   "fieldname": "about",
+   "fieldtype": "Text Editor",
+   "label": "About"
+  },
+  {
+   "fieldname": "section_break_yrbl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Time",
+   "label": "Start Time"
+  },
+  {
+   "fieldname": "column_break_pyop",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Time",
+   "label": "End Time"
+  },
+  {
+   "fieldname": "host",
+   "fieldtype": "Link",
+   "label": "Host",
+   "options": "Event Host",
+   "reqd": 1
+  },
+  {
+   "fetch_if_empty": 1,
+   "fieldname": "time_zone",
+   "fieldtype": "Autocomplete",
+   "label": "Timezone"
+  },
+  {
+   "fieldname": "banner_image",
+   "fieldtype": "Attach Image",
+   "label": "Banner Image"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_published",
+   "fieldtype": "Check",
+   "label": "Is Published ?"
+  },
+  {
+   "fieldname": "schedule_tab",
+   "fieldtype": "Tab Break",
+   "label": "Schedule"
+  },
+  {
+   "fieldname": "schedule",
+   "fieldtype": "Table",
+   "label": "Schedule",
+   "options": "Schedule Item"
+  }
+ ],
+ "grid_page_length": 50,
+ "image_field": "banner_image",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-17 03:03:56.484192",
+ "modified_by": "Administrator",
+ "module": "Events",
+ "name": "FE Events",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "title"
+}
