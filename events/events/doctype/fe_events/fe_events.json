@@ -159,7 +159,7 @@
    "link_fieldname": "event"
   }
  ],
- "modified": "2025-08-17 07:19:53.711254",
+ "modified": "2025-08-17 16:47:22.250008",
  "modified_by": "Administrator",
  "module": "Events",
  "name": "FE Events",
@@ -175,6 +175,18 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Event Manager",
    "share": 1,
    "write": 1
   }

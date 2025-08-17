@@ -51,5 +51,4 @@ class EventBooking(Document):
 			event_ticket.booking = self.name
 			event_ticket.ticket_type = attendee.ticket_type
 			event_ticket.insert().submit()
-			frappe.db.commit()
 
