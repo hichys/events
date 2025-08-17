@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-17 07:12:42.516912",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "attendee_name",
+  "event",
+  "booking",
+  "column_break_hcgq",
+  "ticket_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "attendee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Attendee Name"
+  },
+  {
+   "fieldname": "event",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Event",
+   "options": "FE Events",
+   "reqd": 1
+  },
+  {
+   "fieldname": "booking",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Booking",
+   "options": "Event Booking"
+  },
+  {
+   "fieldname": "column_break_hcgq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ticket_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Ticket Type",
+   "options": "Event Ticket Type",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-17 14:43:39.953576",
+ "modified_by": "Administrator",
+ "module": "Tickting",
+ "name": "Event Ticket",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "search_fields": "event,ticket_type",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "attendee_name"
+}
