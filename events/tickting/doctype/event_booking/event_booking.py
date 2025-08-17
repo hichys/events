@@ -22,25 +22,17 @@ class EventBooking(Document):
 		total_amount: DF.Currency
 		user: DF.Link
 	# end: auto-generated types
- 
+
 	def on_submit(self):
-		for attendee in self.attendees:
-			event_ticket = frappe.new_doc("Event Ticket")
-			event_ticket.attendee_name = attendee.full_name
-			event_ticket.event = self.event	
-			event_ticket.booking = self.name
-			event_ticket.ticket_type = attendee.ticket_type
-			event_ticket.insert()
-			event_ticket.save()
-			frappe.db.commit()
- 
+		self.generate_event_tickets()
+
 	def validate(self):
 		self.set_total()
 		self.set_currency()
 
 	def set_currency(self):
-			# Set currency from the first attendee if available for not fetch default currency
-			# fetch default currency if no attendees are present
+		# Set currency from the first attendee if available for not fetch default currency
+		# fetch default currency if no attendees are present
 		if not self.attendees:
 			self.currency = frappe.get_cached_value("Company", self.company, "default_currency")
 		else:
@@ -51,3 +43,13 @@ class EventBooking(Document):
 		for attende in self.attendees:
 			self.total_amount += attende.amount
 
+	def generate_event_tickets(self):
+		for attendee in self.attendees:
+			event_ticket = frappe.new_doc("Event Ticket")
+			event_ticket.attendee_name = attendee.full_name
+			event_ticket.event = self.event
+			event_ticket.booking = self.name
+			event_ticket.ticket_type = attendee.ticket_type
+			event_ticket.insert()
+			event_ticket.save()
+			frappe.db.commit()
