@@ -13,7 +13,9 @@
   "section_break_huzk",
   "designation",
   "column_break_dfvj",
-  "company"
+  "company",
+  "section_break_lgig",
+  "soical_media_links"
  ],
  "fields": [
   {
@@ -68,13 +70,23 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Featured ?"
+  },
+  {
+   "fieldname": "section_break_lgig",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "soical_media_links",
+   "fieldtype": "Table",
+   "label": "Soical Media Links",
+   "options": "Soical Media Link"
   }
  ],
  "grid_page_length": 50,
  "image_field": "display_image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-08-17 03:05:23.820252",
+ "modified": "2025-08-17 04:56:16.099519",
  "modified_by": "Administrator",
  "module": "Events",
  "name": "Speaker Profile",
