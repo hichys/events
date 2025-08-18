@@ -87,8 +87,13 @@
  "image_field": "qr_code",
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
- "links": [],
- "modified": "2025-08-18 15:47:30.361186",
+ "links": [
+  {
+   "link_doctype": "Event Check In",
+   "link_fieldname": "ticket"
+  }
+ ],
+ "modified": "2025-08-19 01:20:56.498776",
  "modified_by": "Administrator",
  "module": "Tickting",
  "name": "Event Ticket",

@@ -186,9 +186,14 @@
    "group": "General",
    "link_doctype": "Event Track",
    "link_fieldname": "event"
+  },
+  {
+   "group": "Check In",
+   "link_doctype": "Event Check In",
+   "link_fieldname": "event "
   }
  ],
- "modified": "2025-08-18 22:34:23.127483",
+ "modified": "2025-08-19 01:21:54.747770",
  "modified_by": "Administrator",
  "module": "Events",
  "name": "FE Events",
