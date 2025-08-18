@@ -14,8 +14,19 @@ function set_time_zone(frm) {
 function publish_button(frm) {
     const publish_label = frm.doc.is_published ?  __("Unpublish") : __("Publish");
     frm.add_custom_button(publish_label, ()  => {
-        frm.set_value("is_published", !frm.doc.is_published);
-        frm.save();
+        
+          frappe.confirm(
+                'Are you sure to ' + publish_label + ' this event?',
+                () => {
+                    // YES clicked
+                    frm.set_value("is_published", !frm.doc.is_published);
+                    frm.save();
+                },
+                () => {
+                    // NO clicked
+                    
+                }
+            )
     })
 }
 
