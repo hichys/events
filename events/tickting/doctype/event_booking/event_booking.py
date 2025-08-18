@@ -40,8 +40,10 @@ class EventBooking(Document):
 
 	def set_total(self):
 		self.total_amount = 0.0
-		for attende in self.attendees:
-			self.total_amount += attende.amount
+		for attendee in self.attendees:
+			attendee.add_on_total = attendee.get_add_on_total()
+			self.total_amount += attendee.amount + attendee.add_on_total
+			
 
 	def generate_event_tickets(self):
 		for attendee in self.attendees:
@@ -50,5 +52,12 @@ class EventBooking(Document):
 			event_ticket.event = self.event
 			event_ticket.booking = self.name
 			event_ticket.ticket_type = attendee.ticket_type
+
+			if attendee.add_ons:
+				cached_attendee_ticket = frappe.get_cached_doc("Attendee Ticket Add-ons", attendee.add_ons)
+				# Rename the cached attendee ticket to match the add_on on its child table add_ons
+				add_ons_list = cached_attendee_ticket.add_ons
+				event_ticket.add_ons = add_ons_list
+			
 			event_ticket.insert().submit()
 
