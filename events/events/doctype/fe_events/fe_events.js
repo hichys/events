@@ -10,8 +10,18 @@ function set_time_zone(frm) {
         });
 }
 
+
+function publish_button(frm) {
+    const publish_label = frm.doc.is_published ?  __("Unpublish") : __("Publish");
+    frm.add_custom_button(publish_label, ()  => {
+        frm.set_value("is_published", !frm.doc.is_published);
+        frm.save();
+    })
+}
+
 frappe.ui.form.on("FE Events", {
     refresh(frm) {
         set_time_zone(frm);
+        publish_button(frm);
     },
     });
