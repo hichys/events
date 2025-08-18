@@ -5,7 +5,7 @@
 from frappe.model.document import Document
 
 
-class EventBookingAttendee(Document):
+class EventUserPreference(Document):
 	# begin: auto-generated types
 	# This code is auto-generated. Do not modify anything in this block.
 
@@ -14,14 +14,6 @@ class EventBookingAttendee(Document):
 	if TYPE_CHECKING:
 		from frappe.types import DF
 
-		add_ons: DF.Link
-		amount: DF.Currency
-		currency: DF.Link
-		email: DF.Data
-		full_name: DF.Data
-		parent: DF.Data
-		parentfield: DF.Data
-		parenttype: DF.Data
-		ticket_type: DF.Link
+		user: DF.Data
 	# end: auto-generated types
 	pass

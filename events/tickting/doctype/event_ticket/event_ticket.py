@@ -12,8 +12,10 @@ class EventTicket(Document):
 	from typing import TYPE_CHECKING
 
 	if TYPE_CHECKING:
+		from events.tickting.doctype.ticket_add_on_value.ticket_add_on_value import TicketAddOnValue
 		from frappe.types import DF
 
+		add_ons: DF.Table[TicketAddOnValue]
 		amended_from: DF.Link | None
 		attendee_name: DF.Data | None
 		booking: DF.Link | None

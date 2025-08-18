@@ -11,6 +11,8 @@
   "column_break_hcgq",
   "ticket_type",
   "qr_code",
+  "section_break_ckbl",
+  "add_ons",
   "section_break_akra",
   "amended_from"
  ],
@@ -69,6 +71,16 @@
   {
    "fieldname": "section_break_akra",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "add_ons",
+   "fieldtype": "Table",
+   "label": "Add Ons",
+   "options": "Ticket Add On Value"
+  },
+  {
+   "fieldname": "section_break_ckbl",
+   "fieldtype": "Section Break"
   }
  ],
  "grid_page_length": 50,
@@ -76,7 +88,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-08-17 19:46:25.131546",
+ "modified": "2025-08-18 15:47:30.361186",
  "modified_by": "Administrator",
  "module": "Tickting",
  "name": "Event Ticket",

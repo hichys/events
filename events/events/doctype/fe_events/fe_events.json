@@ -148,18 +148,23 @@
    "link_fieldname": "event"
   },
   {
-   "group": "General",
-   "link_doctype": "Event Ticket Type",
-   "link_fieldname": "event"
-  },
-  {
    "group": "Tickting",
    "link_doctype": "Event Booking",
    "link_fieldname": "event"
   },
   {
    "group": "Tickting",
+   "link_doctype": "Event Ticket Type",
+   "link_fieldname": "event"
+  },
+  {
+   "group": "Tickting",
    "link_doctype": "Event Ticket",
+   "link_fieldname": "event"
+  },
+  {
+   "group": "Tickting",
+   "link_doctype": "Ticket Add-on",
    "link_fieldname": "event"
   },
   {
@@ -178,7 +183,7 @@
    "link_fieldname": "event"
   }
  ],
- "modified": "2025-08-18 08:14:23.557475",
+ "modified": "2025-08-18 13:58:02.185440",
  "modified_by": "Administrator",
  "module": "Events",
  "name": "FE Events",
