@@ -181,9 +181,14 @@
    "group": "Sponsershoip",
    "link_doctype": "Sponsership Tier",
    "link_fieldname": "event"
+  },
+  {
+   "group": "General",
+   "link_doctype": "Event Track",
+   "link_fieldname": "event"
   }
  ],
- "modified": "2025-08-18 13:58:02.185440",
+ "modified": "2025-08-18 22:34:23.127483",
  "modified_by": "Administrator",
  "module": "Events",
  "name": "FE Events",

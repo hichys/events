@@ -6,18 +6,22 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_mlel"
+  "event"
  ],
  "fields": [
   {
-   "fieldname": "section_break_mlel",
-   "fieldtype": "Section Break"
+   "fieldname": "event",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Event",
+   "options": "FE Events",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-08-18 08:18:47.816968",
+ "modified": "2025-08-18 22:36:42.286024",
  "modified_by": "Administrator",
  "module": "Events",
  "name": "Event Track",
@@ -52,6 +56,7 @@
  ],
  "quick_entry": 1,
  "row_format": "Dynamic",
+ "search_fields": "event",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []
