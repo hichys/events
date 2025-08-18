@@ -5,7 +5,7 @@
 from frappe.model.document import Document
 
 
-class EventsSponsor(Document):
+class SponsershipTier(Document):
 	# begin: auto-generated types
 	# This code is auto-generated. Do not modify anything in this block.
 
@@ -14,9 +14,7 @@ class EventsSponsor(Document):
 	if TYPE_CHECKING:
 		from frappe.types import DF
 
-		company_name: DF.Data
-		event: DF.Link
-		logo: DF.AttachImage | None
-		tier: DF.Link
+		event: DF.Link | None
+		title: DF.Data
 	# end: auto-generated types
 	pass
