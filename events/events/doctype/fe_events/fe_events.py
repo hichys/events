@@ -1,7 +1,7 @@
 # Copyright (c) 2025, awad@hotmail.it and contributors
 # For license information, please see license.txt
 
-# import frappe
+import frappe
 from frappe.model.document import Document
 
 
@@ -32,4 +32,15 @@ class FEEvents(Document):
 		title: DF.Data
 		venue: DF.Link
 	# end: auto-generated types
-	pass
+
+	@frappe.whitelist()
+	def check_in(self,ticketId : str,track : str|None = None):
+		frappe.get_doc({
+			"doctype" : "Event Check In",
+			"ticket" : ticketId,
+			"track" : track,
+		}).insert().submit()
+
+		print("Check-in successful for ticket:", ticketId)
+
+

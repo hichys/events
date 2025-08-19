@@ -35,8 +35,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Event",
-   "options": "FE Events",
-   "reqd": 1
+   "options": "FE Events"
   },
   {
    "fieldname": "ticket",
@@ -54,6 +53,7 @@
    "fieldname": "track",
    "fieldtype": "Link",
    "label": "Track",
+   "link_filters": "[]",
    "options": "Event Track"
   },
   {
@@ -64,8 +64,13 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
- "links": [],
- "modified": "2025-08-19 01:19:16.352104",
+ "links": [
+  {
+   "link_doctype": "Event Ticket",
+   "link_fieldname": "event"
+  }
+ ],
+ "modified": "2025-08-20 00:47:50.030528",
  "modified_by": "Administrator",
  "module": "Events",
  "name": "Event Check In",

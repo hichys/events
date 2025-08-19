@@ -15,7 +15,7 @@ class EventCheckIn(Document):
 		from frappe.types import DF
 
 		amended_from: DF.Link | None
-		event: DF.Link
+		event: DF.Link | None
 		ticket: DF.Link
 		track: DF.Link | None
 	# end: auto-generated types

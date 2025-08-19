@@ -34,12 +34,13 @@ class EventTicket(Document):
 		import qrcode
 		event_title = frappe.db.get_value("FE Events", self.event, "title")
 		event_ticket_type = frappe.db.get_value("Event Ticket Type", self.ticket_type, "title")
-		img = qrcode.make(
-			f"Event Ticket: {self.name}\n"
-			f"Event: {event_title}\n"
-			f"Attendee: {self.attendee_name}\n"
-			f"Ticket Type: {event_ticket_type}"
-		)
+		# img = qrcode.make(
+		# 	f"Event Ticket: {self.name}\n"
+		# 	f"Event: {event_title}\n"
+		# 	f"Attendee: {self.attendee_name}\n"
+		# 	f"Ticket Type: {event_ticket_type}"
+		# )
+		img = qrcode.make(f'{self.name}')
 		qr_code = io.BytesIO()
 		img.save(qr_code, format='PNG')
 		hex_data =  qr_code.getvalue()
