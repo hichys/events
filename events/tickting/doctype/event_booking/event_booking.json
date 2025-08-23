@@ -96,7 +96,7 @@
    "link_fieldname": "booking"
   }
  ],
- "modified": "2025-08-17 16:48:36.424769",
+ "modified": "2025-08-23 04:04:21.655636",
  "modified_by": "Administrator",
  "module": "Tickting",
  "name": "Event Booking",
@@ -117,6 +117,7 @@
    "write": 1
   },
   {
+   "cancel": 1,
    "create": 1,
    "delete": 1,
    "email": 1,

@@ -5,6 +5,10 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "attendee",
+  "column_break_rohk",
+  "attendee_name",
+  "section_break_mbri",
   "add_ons"
  ],
  "fields": [
@@ -13,12 +17,39 @@
    "fieldtype": "Table",
    "label": "Add Ons",
    "options": "Ticket Add On Value"
+  },
+  {
+   "fieldname": "attendee",
+   "fieldtype": "Link",
+   "label": "Attendee",
+   "no_copy": 1,
+   "options": "Event Booking Attendee",
+   "set_only_once": 1,
+   "unique": 1
+  },
+  {
+   "fetch_from": "attendee.full_name",
+   "fetch_if_empty": 1,
+   "fieldname": "attendee_name",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Attendee Name"
+  },
+  {
+   "fieldname": "column_break_rohk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_mbri",
+   "fieldtype": "Section Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-08-18 22:27:32.001747",
+ "modified": "2025-08-24 01:37:51.353057",
  "modified_by": "Administrator",
  "module": "Tickting",
  "name": "Attendee Ticket Add-ons",
@@ -50,8 +81,13 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
+ "read_only": 1,
  "row_format": "Dynamic",
+ "search_fields": "attendee_name",
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "attendee_name"
 }

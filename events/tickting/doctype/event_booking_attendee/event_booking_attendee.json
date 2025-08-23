@@ -75,7 +75,8 @@
   {
    "fieldname": "add_on_total",
    "fieldtype": "Currency",
-   "label": "Add On total"
+   "label": "Add On total",
+   "read_only": 1
   },
   {
    "fieldname": "number_of_add_ons",
@@ -89,7 +90,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-08-22 21:18:55.200106",
+ "modified": "2025-08-23 13:38:00.400047",
  "modified_by": "Administrator",
  "module": "Tickting",
  "name": "Event Booking Attendee",
