@@ -41,9 +41,11 @@ class EventBooking(Document):
 	def set_total(self):
 		self.total_amount = 0.0
 		for attendee in self.attendees:
-			attendee.add_on_total = attendee.get_add_on_total()
-			attendee.number_of_add_ons = attendee.get_number_of_addons()
-			self.total_amount += attendee.amount + attendee.add_on_total
+			if attendee.add_ons:
+				attendee.add_on_total = attendee.get_add_on_total()
+				attendee.number_of_add_ons = attendee.get_number_of_addons()
+				self.total_amount += attendee.add_on_total
+			self.total_amount += attendee.amount 
 			
 
 	def generate_event_tickets(self):
