@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"WYdPD9wnMd\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">FE Events</span>\",\"col\":12}},{\"id\":\"UFcO0dPKDb\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Create New Event\",\"col\":3}},{\"id\":\"ezUxECm2if\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Published Events\",\"col\":3}},{\"id\":\"2bs4zDtrok\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Hosts\",\"col\":3}},{\"id\":\"eQJ1etkJXd\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"p35tjvuMpx\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"KrMtNPkCDu\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Booking\",\"col\":5}},{\"id\":\"nkVaO-ycj7\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Tickets\",\"col\":4}},{\"id\":\"J9YEpFCFYe\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"y8AiSiIaSo\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Upcoming events\",\"col\":4}},{\"id\":\"scVVl3dq5Q\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h1\\\">Proposals</span>\",\"col\":12}},{\"id\":\"8DPF3xfnuP\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Talk Proposals\",\"col\":4}},{\"id\":\"6tIXnM7ptb\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sponsership Proposal\",\"col\":4}},{\"id\":\"bljo_7k_Ih\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Talk Proposal Recived This Week\",\"col\":5}}]",
+ "content": "[{\"id\":\"WYdPD9wnMd\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">FE Events</span>\",\"col\":12}},{\"id\":\"UFcO0dPKDb\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Create New Event\",\"col\":3}},{\"id\":\"ezUxECm2if\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Published Events\",\"col\":3}},{\"id\":\"2bs4zDtrok\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Hosts\",\"col\":3}},{\"id\":\"eQJ1etkJXd\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"p35tjvuMpx\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"KrMtNPkCDu\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Booking\",\"col\":5}},{\"id\":\"nkVaO-ycj7\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Tickets\",\"col\":4}},{\"id\":\"Lhw8LSNvqG\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Event Overview Report\",\"col\":4}},{\"id\":\"J9YEpFCFYe\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"y8AiSiIaSo\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Upcoming events\",\"col\":4}},{\"id\":\"scVVl3dq5Q\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h1\\\">Proposals</span>\",\"col\":12}},{\"id\":\"8DPF3xfnuP\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"New Talk Proposals\",\"col\":4}},{\"id\":\"6tIXnM7ptb\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sponsership Proposal\",\"col\":4}},{\"id\":\"bljo_7k_Ih\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Talk Proposal Recived This Week\",\"col\":5}}]",
  "creation": "2025-08-17 03:23:13.702943",
  "custom_blocks": [],
  "docstatus": 0,
@@ -13,7 +13,7 @@
  "is_hidden": 0,
  "label": "Frappe Events",
  "links": [],
- "modified": "2025-08-18 09:27:02.764428",
+ "modified": "2025-08-24 23:49:26.852644",
  "modified_by": "Administrator",
  "module": "Events",
  "name": "Frappe Events",
@@ -47,6 +47,14 @@
    "link_to": "Event Booking",
    "stats_filter": "[[\"Event Booking\",\"docstatus\",\"=\",\"1\",false]]",
    "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Event Overview Report",
+   "link_to": "Event Overview",
+   "report_ref_doctype": "FE Events",
+   "type": "Report"
   },
   {
    "color": "Orange",
