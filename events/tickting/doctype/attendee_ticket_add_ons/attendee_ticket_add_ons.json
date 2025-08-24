@@ -22,9 +22,8 @@
    "fieldname": "attendee",
    "fieldtype": "Link",
    "label": "Attendee",
-   "no_copy": 1,
    "options": "Event Booking Attendee",
-   "set_only_once": 1,
+   "read_only": 1,
    "unique": 1
   },
   {
@@ -49,7 +48,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-08-24 01:37:51.353057",
+ "modified": "2025-08-24 03:19:45.317006",
  "modified_by": "Administrator",
  "module": "Tickting",
  "name": "Attendee Ticket Add-ons",
