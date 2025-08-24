@@ -69,8 +69,7 @@
    "fieldname": "add_ons",
    "fieldtype": "Link",
    "label": "Add Ons",
-   "options": "Attendee Ticket Add-ons",
-   "reqd": 1
+   "options": "Attendee Ticket Add-ons"
   },
   {
    "fieldname": "add_on_total",
@@ -90,7 +89,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-08-23 13:38:00.400047",
+ "modified": "2025-08-24 04:50:21.753409",
  "modified_by": "Administrator",
  "module": "Tickting",
  "name": "Event Booking Attendee",

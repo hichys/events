@@ -52,7 +52,8 @@
    "fieldname": "attendees",
    "fieldtype": "Table",
    "label": "Attendees",
-   "options": "Event Booking Attendee"
+   "options": "Event Booking Attendee",
+   "reqd": 1
   },
   {
    "fieldname": "section_break_gnoz",
@@ -96,7 +97,7 @@
    "link_fieldname": "booking"
   }
  ],
- "modified": "2025-08-23 04:04:21.655636",
+ "modified": "2025-08-24 04:23:55.649570",
  "modified_by": "Administrator",
  "module": "Tickting",
  "name": "Event Booking",

@@ -15,7 +15,7 @@ class EventBookingAttendee(Document):
 		from frappe.types import DF
 
 		add_on_total: DF.Currency
-		add_ons: DF.Link
+		add_ons: DF.Link | None
 		amount: DF.Currency
 		currency: DF.Link
 		email: DF.Data
