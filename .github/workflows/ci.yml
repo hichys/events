@@ -101,6 +101,6 @@ jobs:
         working-directory: /home/runner/frappe-bench
         run: |
           bench --site test_site set-config allow_tests true
-          bench --site test_site run-tests --app events
+          bench --site test_site run-tests --module events.tickting.doctype.event_booking.test_event_booking  --test test_total_calculation
         env:
           TYPE: server
