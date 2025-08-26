@@ -95,9 +95,13 @@
   {
    "link_doctype": "Event Ticket",
    "link_fieldname": "booking"
+  },
+  {
+   "link_doctype": "Event Payment",
+   "link_fieldname": "reference_docname"
   }
  ],
- "modified": "2025-08-24 04:23:55.649570",
+ "modified": "2025-08-26 22:40:39.436412",
  "modified_by": "Administrator",
  "module": "Tickting",
  "name": "Event Booking",

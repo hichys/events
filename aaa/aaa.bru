@@ -1,0 +1,25 @@
+meta {
+  name: aaa
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://127.0.0.1:8001/api/v2/method/events.payments.get_payment_link_for_booking
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: token e952aaa990e607e:19978779837c1e5
+}
+
+body:json {
+  {
+    "booking_id" :"0cc20k0gt4" 
+  }
+}
+
+settings {
+  encodeUrl: true
+}

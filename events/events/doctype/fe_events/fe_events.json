@@ -24,7 +24,9 @@
   "short_description",
   "about",
   "schedule_tab",
-  "schedule"
+  "schedule",
+  "payment_gateway_tab",
+  "payment_gateway"
  ],
  "fields": [
   {
@@ -136,6 +138,17 @@
    "fieldtype": "Table",
    "label": "Schedule",
    "options": "Schedule Item"
+  },
+  {
+   "fieldname": "payment_gateway_tab",
+   "fieldtype": "Tab Break",
+   "label": "Payment Gateway"
+  },
+  {
+   "fieldname": "payment_gateway",
+   "fieldtype": "Link",
+   "label": "Payment Gateway",
+   "options": "Payment Gateway"
   }
  ],
  "grid_page_length": 50,
@@ -193,7 +206,7 @@
    "link_fieldname": "event "
   }
  ],
- "modified": "2025-08-19 01:21:54.747770",
+ "modified": "2025-08-25 23:09:57.825464",
  "modified_by": "Administrator",
  "module": "Events",
  "name": "FE Events",

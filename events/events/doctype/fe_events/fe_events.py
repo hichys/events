@@ -24,6 +24,7 @@ class FEEvents(Document):
 		is_published: DF.Check
 		medium: DF.Literal["In Person", "Online", "Hybrid"]
 		name: DF.Int | None
+		payment_gateway: DF.Link | None
 		schedule: DF.Table[ScheduleItem]
 		short_description: DF.SmallText | None
 		start_date: DF.Date | None
