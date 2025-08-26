@@ -90,6 +90,7 @@ jobs:
         working-directory: /home/runner/frappe-bench
         run: |
           bench get-app events $GITHUB_WORKSPACE
+          bench get-app payments
           bench setup requirements --dev
           bench new-site --db-root-password root --admin-password admin test_site
           bench --site test_site install-app events
