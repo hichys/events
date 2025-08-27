@@ -37,7 +37,7 @@ class TestEventBooking(FrappeTestCase):
 			{
 				"doctype": "Event Ticket Type",
 				"title": "VIP",
-				"event": test_fe_events,
+				"event": test_fe_events.name,
 				"currency": "LYD",
 				"price": TEST_VIP_TICKET_TYPE_PRICE,
 			}

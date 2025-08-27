@@ -38,7 +38,7 @@ class EventBooking(Document):
 			self.total_amount += attendee.amount
 			if attendee.add_ons:
 				attendee.add_on_total = attendee.get_add_on_total()
-				attendee.number_of_add_ons = attendee.get_number_of_add_ons()
+				attendee.number_of_add_ons = attendee.get_number_of_addons()
 				self.total_amount += attendee.add_on_total
 
 	def on_submit(self):
