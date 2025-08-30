@@ -29,6 +29,14 @@ function publish_button(frm) {
 
 frappe.ui.form.on("FE Events", {
 	refresh(frm) {
+		frm.set_query("track","schedule", (doc,cdt,cdn) => {
+			return {
+				filters :{
+					event : doc.name
+				}
+			} 
+		})
+		
 		set_time_zone(frm);
 		publish_button(frm);
 
@@ -75,3 +83,4 @@ frappe.ui.form.on("FE Events", {
 		});
 	},
 });
+
